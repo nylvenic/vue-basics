@@ -12,6 +12,7 @@
         <h1 class="text-primary h2 text-center">For Loops</h1>
         <hr>
         <div class="row">
+            <!-- v-for this also works with objects -->
             <div v-for="(product, index) in products" class="col-4">
                 <div class="card">
                     <img :src="product.src" class="card-img-top object-fit-cover rounded" alt="..." style="height: 12rem;">

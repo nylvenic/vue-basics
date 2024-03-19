@@ -24,7 +24,9 @@
             <input type="text" v-model="lname" name="lname" id="lname" class="form-control">
         </div>
         <p>Your computed full name is: {{cFullName}}</p>
+        <!-- computed only changes when the used data properties are changed -->
         <p>Your method full name is: {{mFullName()}}</p>
+        <!-- method will run every time the state changes which is bad for performance -->
     </div>
 
     <!-- bootstrap -->
